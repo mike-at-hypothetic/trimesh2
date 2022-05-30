@@ -1,3 +1,24 @@
+Note
+----
+
+
+This is a GitHub import of the excellent Trimesh2 Library
+
+More information on the library can be found at [It's home page](https://gfx.cs.princeton.edu/proj/trimesh2/)
+
+For my convenience I have also added a simple cmake build system to replace the projects
+raw Makefile based one
+
+Compiling
+---------
+- install cmake
+- `mkdir build`
+- `cd build`
+- `cmake ..`
+- `cmake --build .`
+
+Here is the original README from TriMesh2:
+------------------------------------------
 
 This is trimesh2, a C++ library and set of utilities for input, output,
 and basic manipulation of 3D triangle meshes.  The goals of the code are
