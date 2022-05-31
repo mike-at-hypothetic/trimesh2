@@ -1,4 +1,4 @@
-add_library("libtrimesh2" 	TriMesh_bounding.cc
+add_library("trimesh2" 	TriMesh_bounding.cc
 TriMesh_connectivity.cc
 TriMesh_curvature.cc
 TriMesh_io.cc
@@ -24,4 +24,4 @@ reorder_verts.cc
 subdiv.cc
 umbrella.cc)
 
-target_include_directories("libtrimesh2" PUBLIC ${TRIMESH_INCLUDE_DIR})
+target_include_directories("trimesh2" PUBLIC ${TRIMESH_INCLUDE_DIR})

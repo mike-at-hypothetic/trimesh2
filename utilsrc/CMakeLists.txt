@@ -4,7 +4,7 @@ set(trimesh_UTIL_PROGS "")
 macro(util_prog util_name)
     add_executable(${util_name} ${util_name}.cc)
     target_include_directories(${util_name} PUBLIC ${TRIMESH_INCLUDE_DIR})
-    target_link_libraries(${util_name} PUBLIC libtrimesh2)
+    target_link_libraries(${util_name} PUBLIC trimesh2)
     list(APPEND trimesh_UTIL_PROGS ${util_name})
 endmacro()
 
