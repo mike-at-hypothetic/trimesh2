@@ -1,3 +1,5 @@
+include(GNUInstallDirs)
+
 add_library("trimesh2" 	TriMesh_bounding.cc
 TriMesh_connectivity.cc
 TriMesh_curvature.cc
@@ -25,3 +27,9 @@ subdiv.cc
 umbrella.cc)
 
 target_include_directories("trimesh2" PUBLIC ${TRIMESH_INCLUDE_DIR})
+
+install(TARGETS trimesh2
+        LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+        ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
+        RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+)
