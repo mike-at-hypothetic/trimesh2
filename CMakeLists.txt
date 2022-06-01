@@ -9,5 +9,6 @@ set(TRIMESH_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/include)
 add_library(trimesh2 "")
 
 add_subdirectory(include)
+add_subdirectory(gluit)
 add_subdirectory(libsrc)
 add_subdirectory(utilsrc)
