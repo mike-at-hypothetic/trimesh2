@@ -24,4 +24,4 @@ install(FILES ${Trimesh2_HEADERS}
         DESTINATION include/trimesh2)
 
 install(FILES GL/glui.h
-        DESTINATION include)
+        DESTINATION include/GL)
